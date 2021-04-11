@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Raleway&family=Yellowtail&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
+  -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
+  outline: none !important;
+}
+html {
+  overflow: hidden;
+}
+body {
+  background: #000;
+  overflow: hidden;
+  position: fixed;
+}
+.branding {
+  position: absolute;
+  height: fit-content;
+  width: fit-content;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  margin: auto;
+  top: 10px;
+  left: 10px;
+}
+good {
+  color: rgb(107, 255, 164);
+}
+vibes {
+  color: rgb(207, 155, 255);
+  font-size: 30px;
+}
+.ui-loader.ui-corner-all.ui-loader-default.ui-body-a {
+  outline: none;
+  border: none;
+  opacity: 0;
+}
+.content {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.special-container-interface {
+  height: 100vh;
+  width: 100vw;
+  display: none;
+}
+.ordinary-container-interface {
+  height: 100vh;
+  width: 100vw;
+  display: none;
+}
+.special-container-interface .message {
+  height: fit-content;
+  max-width: 90%;
+  color: #fff;
+  font-size: 60px;
+  position: absolute;
+  margin: auto;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  font-family: "Comfortaa", cursive;
+  text-transform: uppercase;
+}
+.special-container-interface .message .text {
+  height: fit-content;
+  max-width: 100vw;
+  overflow-wrap: break-word;
+}
+.special-container-interface .instruct {
+  color: rgb(116, 116, 116);
+  height: fit-content;
+  width: fit-content;
+  position: absolute;
+  font-family: "Raleway", sans-serif;
+  margin: auto;
+  right: 0;
+  left: 0;
+  bottom: 25px;
+}
+.special-container-interface .morse-message {
+  font-size: 22px;
+  font-family: monospace;
+}
+
+.message-body {
+  width: 100%;
+  margin-top: 70px;
+}
+.text-holder {
+  height: fit-content;
+  width: 100vw;
+  color: white;
+  margin-bottom: 10px;
+  font-family: "Comfortaa", cursive;
+}
+.text-holder .my-text,
+.text-holder .their-text {
+  padding: 10px;
+  font-size: 40px;
+}
+.text-holder .my-text {
+  width: fit-content;
+  position: relative;
+  margin-left: auto;
+  right: 0;
+  border-bottom: 2px solid rgb(107, 255, 164);
+  text-transform: uppercase;
+}
+.text-holder .their-text {
+  width: fit-content;
+  position: relative;
+  margin-right: auto;
+  left: 0;
+  border-bottom: 2px solid rgb(207, 155, 255);
+  text-transform: uppercase;
+}
+.message-sendbox {
+  background: transparent;
+  outline: none;
+  border: none;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 20px;
+  height: 60px;
+  position: absolute;
+  margin: auto;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 0 15px;
+  color: rgb(207, 155, 255);
+  text-transform: uppercase;
+  border-bottom: 2px solid rgb(107, 255, 164);
+}
+
+.intro-container-interface {
+  height: 90vh;
+  width: 90%;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.intro-art1 {
+  position: absolute;
+  height: 200px;
+  margin: auto;
+  right: 0;
+  bottom: 0;
+}
+.user-type-input {
+  position: absolute;
+  height: fit-content;
+  width: fit-content;
+  margin: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 75px;
+}
+.user-type-input div {
+  color: white;
+  font-family: "raleway", sans-serif;
+  text-align: center;
+}
+.user-type-input img {
+  filter: invert(1);
+  height: 120px;
+  margin: auto;
+  cursor: pointer;
+}

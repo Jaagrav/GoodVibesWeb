@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Good Vibes on Web</title>
+    <link rel="stylesheet" href="design.css" />
+    <meta name="theme-color" content="#000000" />
+  </head>
+
+  <body>
+    <div class="content">
+      <div class="branding">
+        <good>Good</good><br />
+        <vibes>Vibes</vibes><br />
+      </div>
+      <div class="intro-container-interface">
+        <img src="./undraw_doctors_hwty.png" class="intro-art1" />
+        <div class="user-type-input">
+          <center>
+            <div class="">Are you the patient or the caregiver?</div>
+            <br />
+            <img
+              src="./kindpng_3412158.png"
+              alt="patient"
+              class="patient-choice"
+            /><br /><br />
+            <div class="">Or</div>
+            <br />
+            <img
+              src="./hospital-patient.png"
+              alt="caregiver"
+              class="standard-choice"
+            />
+          </center>
+        </div>
+      </div>
+      <div class="special-container-interface">
+        <div class="message">
+          <div class="text"></div>
+          <div class="morse-message"></div>
+        </div>
+        <div class="instruct">Tap anywhere to type in Morse Code</div>
+      </div>
+      <div class="ordinary-container-interface">
+        <div class="message-body">
+          <!-- <div class="text-holder">
+            <div class="my-text">
+              HI
+            </div>
+          </div>
+          <div class="text-holder">
+            <div class="their-text">
+              HELLO
+            </div>
+          </div> -->
+        </div>
+        <input
+          type="text"
+          class="message-sendbox"
+          placeholder="Your message..."
+        />
+      </div>
+    </div>
+    <script>
+      document.querySelector(".message-body").style.height =
+        window.innerHeight - 134 + "px";
+      document.querySelector(".message-sendbox").style.width =
+        window.innerWidth - 30 + "px";
+      window.addEventListener("resize", (e) => {
+        document.querySelector(".message-body").style.height =
+          window.innerHeight - 134 + "px";
+        document.querySelector(".message-sendbox").style.width =
+          window.innerWidth - 30 + "px";
+      });
+      var choice;
+      document
+        .querySelector(".patient-choice")
+        .addEventListener("click", () => {
+          document.querySelector(".intro-container-interface").style.display =
+            "none";
+          document.querySelector(".special-container-interface").style.display =
+            "block";
+          choice = "patient";
+        });
+      document
+        .querySelector(".standard-choice")
+        .addEventListener("click", () => {
+          document.querySelector(".intro-container-interface").style.display =
+            "none";
+          document.querySelector(
+            ".ordinary-container-interface"
+          ).style.display = "block";
+          choice = "caregiver";
+        });
+    </script>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=auvTMQpf"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-analytics.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyBSO1l02gRubi7mZnIWhkxMcuXE-oMu33g",
+        authDomain: "converse-dd75d.firebaseapp.com",
+        databaseURL: "https://converse-dd75d.firebaseio.com",
+        projectId: "converse-dd75d",
+        storageBucket: "converse-dd75d.appspot.com",
+        messagingSenderId: "984079997699",
+        appId: "1:984079997699:web:b581a0c4f15a02f4c82736",
+        measurementId: "G-T7WR0S7LDP",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="//code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
+    <script src="constants.js"></script>
+    <script src="patient-frontEnd.js"></script>
+    <script src="caregiver-frontEnd.js"></script>
+  </body>
+</html>
